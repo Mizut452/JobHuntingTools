@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f93ab844-6b16-43bf-b11b-5e405db75789" name="変更" comment="ボタンの設置">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ResearchPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TitlePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JHTJFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JobHuntingTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JobHuntingTools.java" afterDir="false" />
+    <list default="true" id="f93ab844-6b16-43bf-b11b-5e405db75789" name="変更" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/TitlePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TitlePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +53,19 @@
       <option name="project" value="LOCAL" />
       <updated>1669823594660</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Panelの設定まで">
+      <created>1669882249078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669882249078</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ボタンの設置" />
-    <option name="LAST_COMMIT_MESSAGE" value="ボタンの設置" />
+    <MESSAGE value="Panelの設定まで" />
+    <option name="LAST_COMMIT_MESSAGE" value="Panelの設定まで" />
   </component>
 </project>
