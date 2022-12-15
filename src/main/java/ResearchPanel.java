@@ -2,6 +2,7 @@ import org.w3c.dom.Text;
 
 import javax.swing.text.LabelView;
 import java.awt.*;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.concurrent.LinkedBlockingDeque;
 
 public class ResearchPanel extends Panel {
@@ -12,39 +13,36 @@ public class ResearchPanel extends Panel {
         Label Sindustry = new Label("業界：");
         Label SheadOffice = new Label("本社所在地：");
         Label SareOsaka = new Label();
-        Label SuRL = new Label("会社のURL：");
-        Label SadoptURL = new Label("会社の採用ページ：");
+        Label SuRL = new Label("URL：");
+        Label SadoptURL = new Label("採用ページ：");
         Label Sothers = new Label("その他：");
-        TextField companyName = new TextField();
-        TextField industry = new TextField();
-        TextField headOffice = new TextField();
+        TextField companyName = new TextField("companyName");
+        TextField industry = new TextField("industry");
+        TextField headOffice = new TextField("headOffice");
         Checkbox areOsaka = new Checkbox("大阪事業所の有無：");
-        TextField URL = new TextField();
-        TextField adoptURL = new TextField();
-        TextArea others = new TextArea();
+        TextField URL = new TextField("URL");
+        TextField adoptURL = new TextField("adoptURL");
+        TextArea others = new TextArea("others");
 
-        ScompanyName.setBounds(10, 10, 50, 10);
-        ScompanyName.setFont(new Font("serif", Font.PLAIN, 10));
-        Sindustry.setBounds(20, 20, 50, 10);
-        Sindustry.setFont(new Font("serif", Font.PLAIN, 10));
-        SheadOffice.setBounds(30, 30, 50, 10);
+        ScompanyName.setBounds(10, 40, 60, 20);
+        ScompanyName.setFont(new Font("serif", Font.PLAIN, 15));
+        Sindustry.setBounds(20, 80, 60, 20);
+        Sindustry.setFont(new Font("serif", Font.PLAIN, 15));
+        SheadOffice.setBounds(10, 120, 60, 20);
         SheadOffice.setFont(new Font("serif", Font.PLAIN, 10));
-        SareOsaka.setBounds(40, 40, 50, 10);
-        SareOsaka.setFont(new Font("serif", Font.PLAIN, 10));
-        SuRL.setBounds(50, 50, 50, 10);
-        SuRL.setFont(new Font("serif", Font.PLAIN, 10));
-        SadoptURL.setBounds(60, 60, 50, 10);
+        SuRL.setBounds(20, 160, 60, 20);
+        SuRL.setFont(new Font("serif", Font.PLAIN, 15));
+        SadoptURL.setBounds(10, 200, 60, 20);
         SadoptURL.setFont(new Font("serif", Font.PLAIN, 10));
-        Sothers.setBounds(70, 70, 50, 10);
-        Sothers.setFont(new Font("serif", Font.PLAIN, 10));
+        Sothers.setBounds(10, 240, 60, 20);
+        Sothers.setFont(new Font("serif", Font.PLAIN, 15));
 
-        companyName.setBounds(100, 100, 50, 10);
-        industry.setBounds(90, 90, 50, 10);
-        headOffice.setBounds(80, 80, 50, 10);
-        areOsaka.setBounds(70, 70, 50, 10);
-        URL.setBounds(60, 60, 50, 10);
-        adoptURL.setBounds(50, 50, 50, 10);
-        others.setBounds(40, 40, 50, 10);
+        companyName.setBounds(90, 40, 300, 20);
+        industry.setBounds(90, 80, 300, 20);
+        headOffice.setBounds(90, 120, 300, 20);
+        URL.setBounds(90, 160, 300, 20);
+        adoptURL.setBounds(90, 200, 300, 20);
+        others.setBounds(90, 240, 300, 20);
 
         add(ScompanyName);
         add(Sothers);
@@ -61,11 +59,6 @@ public class ResearchPanel extends Panel {
         add(URL);
         add(adoptURL);
         add(others);
-
-
-
-
-
     }
 
 
